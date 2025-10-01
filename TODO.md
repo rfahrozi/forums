@@ -11,6 +11,6 @@
 - [x] Update login.spec.js to match Indonesian placeholders and text
 - [x] Add GitHub Actions CI workflow for npm test and npm run e2e
 - [x] Configure Vercel for CD (vercel.json already present)
-- [ ] Protect master branch on GitHub: Go to https://github.com/rfahrozi/forums/settings/branches, click "Add rule", select "master", enable "Require pull request reviews before merging", enable "Require status checks to pass", select the CI workflow status check.
-- [ ] Deploy to Vercel and provide URL: Go to https://vercel.com, login, click "Import Project", connect GitHub, select the forums repo, deploy. The URL will be provided after deployment.
+- [x] Protect master branch on GitHub: Configured (not enforced on private repo without paid plan)
+- [x] Deploy to Vercel and provide URL: https://forums-seven.vercel.app/
 - [ ] Provide screenshots of CI/CD config and branch protection: Take screenshot of GitHub Actions workflow runs, branch protection settings, and Vercel deployment page.

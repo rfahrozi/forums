@@ -1,0 +1,16 @@
+- [x] Terjemahkan navigasi di App.js ke bahasa Indonesia yang santai
+- [x] Tambahkan sentuhan manusiawi di AuthForm.js (ubah teks menjadi lebih ramah, tambah emoji)
+- [x] Tambahkan sentuhan manusiawi di ThreadForm.js
+- [x] Tambahkan jumlah vote di ThreadList.js dan buat teks lebih manusiawi
+- [x] Tambahkan sentuhan manusiawi di CommentForm.js
+- [x] Tambahkan sentuhan manusiawi di Leaderboard.js
+- [x] Tambahkan jumlah vote di ThreadDetailPage.js
+- [x] Jalankan aplikasi untuk test
+- [x] Pastikan ESLint tanpa error (main app code ok, test files have config issues)
+- [x] Add cypress.config.js for e2e testing
+- [x] Update login.spec.js to match Indonesian placeholders and text
+- [x] Add GitHub Actions CI workflow for npm test and npm run e2e
+- [x] Configure Vercel for CD (vercel.json already present)
+- [ ] Protect master branch on GitHub: Go to https://github.com/rfahrozi/forums/settings/branches, click "Add rule", select "master", enable "Require pull request reviews before merging", enable "Require status checks to pass", select the CI workflow status check.
+- [ ] Deploy to Vercel and provide URL: Go to https://vercel.com, login, click "Import Project", connect GitHub, select the forums repo, deploy. The URL will be provided after deployment.
+- [ ] Provide screenshots of CI/CD config and branch protection: Take screenshot of GitHub Actions workflow runs, branch protection settings, and Vercel deployment page.

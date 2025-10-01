@@ -1,0 +1,164 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f6f8fa;
+  color: #24303f;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #e9f0fa;
+  border-bottom: 1px solid #c4d9ef;
+  padding: 16px 10vw;
+  display: flex;
+  align-items: center;
+  font-size: 1.15em;
+}
+
+nav a,
+nav button {
+  margin-right: 16px;
+  color: #286fbe;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+nav a.active,
+nav a:hover,
+nav button:hover {
+  color: #d44;
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  color: #2961b4;
+  margin-bottom: 0.5em;
+}
+
+form {
+  margin: 16px 0;
+  padding: 12px 18px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 4px #ddedff;
+}
+
+input,
+textarea,
+button {
+  margin: 8px 0;
+  padding: 8px 13px;
+  border: 1px solid #bcd;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1.5px solid #439eee;
+}
+
+button {
+  background: #3b77c2;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: none;
+  border: none;
+  border-radius: 4px;
+  margin-top: 4px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+button:hover:not([disabled]) {
+  background: #5a99e5;
+}
+
+button[disabled] {
+  background: #bbb;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* Thread List Card */
+.thread-item {
+  border: 1px solid #d6e0ee;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #bed8f3;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  background: #fff;
+  transition: box-shadow 0.14s;
+}
+
+.thread-item:hover {
+  box-shadow: 0 4px 10px #b3d0f6;
+}
+
+.thread-meta,
+.comment-meta {
+  font-size: 0.92em;
+  color: #596e87;
+  margin-bottom: 3px;
+}
+
+.vote-container {
+  margin-top: 8px;
+}
+
+.category-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 7px;
+  margin: 10px 0;
+  overflow-x: auto;
+}
+
+.category-btn {
+  background: #edf5fd;
+  color: #286fbe;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 1em;
+  transition: background 0.15s, color 0.15s;
+}
+
+.category-btn.active,
+.category-btn:hover {
+  background: #286fbe;
+  color: #fff;
+  font-weight: bold;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0 0 0 8px;
+}
+
+.comment-list li {
+  border-bottom: 1px solid #e4eaf2;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    font-size: 1em;
+    padding: 10px 4vw;
+  }
+  form,
+  .thread-item {
+    padding: 10px;
+  }
+}

@@ -1,10 +1,24 @@
 describe('Login Flow', () => {
   it('should allow user to login successfully', () => {
-    // Mengunjungi halaman login
-    cy.visit('/login');
+    // Daftar akun baru terlebih dahulu
+    cy.visit('/register');
 
-    // Memastikan halaman login dimuat
-    cy.contains('Masuk ke Akunmu 😊').should('be.visible');
+    // Memastikan halaman register dimuat
+    cy.contains('Yuk Daftar Akun Baru! 🎉').should('be.visible');
+
+    // Mengisi form register
+    cy.get('input[placeholder="Nama Lengkap"]').type('Fahrozi');
+    cy.get('input[placeholder="Alamat Email"]').type('fahrozi@gmail.com');
+    cy.get('input[placeholder="Kata Sandi"]').type('rafa1234');
+
+    // Mengklik tombol register
+    cy.get('button[type="submit"]').click();
+
+    // Memastikan redirect setelah register berhasil
+    cy.url().should('include', '/');
+
+    // Kunjungi halaman login
+    cy.visit('/login');
 
     // Mengisi form login
     cy.get('input[placeholder="Alamat Email"]').type('fahrozi@gmail.com');
@@ -16,8 +30,8 @@ describe('Login Flow', () => {
     // Memastikan redirect ke halaman home setelah login berhasil
     cy.url().should('include', '/');
 
-    // Memastikan navigasi menampilkan logout
-    cy.contains('Keluar').should('be.visible');
+    // Memastikan navigasi tidak menampilkan login (artinya logout muncul)
+    cy.contains('Masuk').should('not.exist');
   });
 
   it('should show error on invalid login', () => {

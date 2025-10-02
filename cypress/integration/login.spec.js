@@ -31,7 +31,7 @@ describe('Login Flow', () => {
     cy.url().should('include', '/');
 
     // Memastikan navigasi tidak menampilkan login (artinya logout muncul)
-    cy.contains('Masuk').should('be.visible');
+    cy.contains('Masuk').should('not.exist');
   });
 
   it('should show error on invalid login', () => {

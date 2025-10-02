@@ -25,10 +25,5 @@ jobs:
 
     - run: npm test
 
-    - name: Start server
-      run: npm start &
-
-    - name: Wait for server
-      run: npx wait-on http://localhost:3000
-
-    - run: npm run e2e
+    - name: Run E2E Tests
+      run: npm run e2e

@@ -58,12 +58,12 @@
 ### PHASE 1: GitHub Setup (5 minutes)
 
 #### Task 1: Make Repository PUBLIC
-- [ ] Go to: https://github.com/rfahrozi/forums/settings
-- [ ] Scroll to "Danger Zone"
-- [ ] Click "Change visibility"
-- [ ] Select "Make public"
-- [ ] Type: `rfahrozi/forums`
-- [ ] Confirm
+- [x] Go to: https://github.com/rfahrozi/forums/settings
+- [x] Scroll to "Danger Zone"
+- [x] Click "Change visibility"
+- [x] Select "Make public"
+- [x] Type: `rfahrozi/forums`
+- [x] Confirm
 
 **Status:** ⏳ Not Started  
 **Estimated Time:** 2 minutes  
@@ -72,14 +72,14 @@
 ---
 
 #### Task 2: Setup Branch Protection
-- [ ] Go to: Settings → Branches
-- [ ] Click "Add branch protection rule"
-- [ ] Branch name: `master`
-- [ ] Check: "Require a pull request before merging"
-- [ ] Check: "Require status checks to pass before merging"
-- [ ] Check: "Require branches to be up to date"
-- [ ] Select status check: `test`
-- [ ] Click "Create"
+- [x] Go to: Settings → Branches
+- [x] Click "Add branch protection rule"
+- [x] Branch name: `master`
+- [x] Check: "Require a pull request before merging"
+- [x] Check: "Require status checks to pass before merging"
+- [x] Check: "Require branches to be up to date"
+- [x] Select status check: `test`
+- [x] Click "Create"
 
 **Status:** ⏳ Not Started  
 **Estimated Time:** 3 minutes  

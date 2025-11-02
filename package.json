@@ -16,7 +16,11 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .js,.jsx",
     "cypress:run": "cypress run",
-    "e2e": "start-server-and-test start http://localhost:3000 cypress:run"
+    "e2e": "start-server-and-test start http://localhost:3000 cypress:run",
+    "create-demo-branch": "bash scripts/create-demo-branch.sh",
+    "verify": "node scripts/verify-submission.js",
+    "prepare-zip": "echo 'Removing node_modules and build...' && rm -rf node_modules build && echo 'Ready to ZIP!'",
+    "help": "echo '\n📚 Available Commands:\n  npm start - Run dev server\n  npm test - Run tests\n  npm run build - Build for production\n  npm run e2e - Run E2E tests\n  npm run lint - Check code quality\n  npm run verify - Verify submission requirements\n  npm run create-demo-branch - Create branch for screenshots\n  npm run prepare-zip - Prepare project for ZIP\n  npm run help - Show this help\n'"
   },
   "browserslist": {
     "production": [

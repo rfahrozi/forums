@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { registerUser, loginUser } from '../redux/slices/authSlice';
 
 // Komponen form register dan login
-function AuthForm({ mode }) {
+function AuthForm({ mode = 'login' }) {
   const [form, setForm] = useState({ name: '', email: '', password: '' });
   const dispatch = useDispatch();
   const { status, error } = useSelector((state) => state.auth);
@@ -72,7 +72,5 @@ function AuthForm({ mode }) {
 }
 
 AuthForm.propTypes = { mode: PropTypes.string };
-
-AuthForm.defaultProps = { mode: 'login' };
 
 export default AuthForm;

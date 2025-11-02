@@ -5,8 +5,8 @@ describe('Login Flow', () => {
       statusCode: 200,
       body: {
         status: 'success',
-        data: { token: 'mock-success-token' }
-      }
+        data: { token: 'mock-success-token' },
+      },
     }).as('loginSuccess');
 
     // Mengunjungi halaman login
@@ -43,8 +43,8 @@ describe('Login Flow', () => {
       statusCode: 200,
       body: {
         status: 'error',
-        message: 'email or password is wrong'
-      }
+        message: 'email or password is wrong',
+      },
     }).as('loginError');
 
     cy.visit('/login');
